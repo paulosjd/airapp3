@@ -1,47 +1,30 @@
-Minimal
+Airapp3
+=========
 
-A barebones quick-to-start Symfony3 micro framework which can seamlessly
-grow into a larger, fully framework taking full advantage of Symfony
-Components and 3rd party bundles. To Run:
+A web app created with Flask which contains a user input form which can be used to select sites in London to obtain charts of recent air pollution.
 
-Assuming PHP & Composer are installed.
 
-> Git clone or copy to a project directory In the project directory,
-> install third party dependencies:
+Install
+=========
 
-\$ composer up
+Dependencies:
 
-> To verify install, from the parent directory, run the in-built PHP
-> webserver:
+ - Python 3
 
-php -S localhost:8000 -t your\_project\_folder
+   - https://www.python.org
 
-Where your\_project\_name represents the project directory from step 1.
+ - PIP (Python package manager)
 
-> Start creating your Controllers and Services in the src/AppBundle
-> folder.
+   - https://pypi.python.org/pypi/pip
 
-PHP Pimple Contacts Example
 
-The Pimple dependency injection container has been used to implement an
-IoC design pattern which should make testing and further project
-development easier in the future (e.g. supporting additional data
-sources). To Run:
+Configure and run server:
+------------------------
 
-Assuming PHP & Composer are installed.
+After Cloning or downloading project files, run the following commands from the project's root directory:
 
-1)  First copy a full version of the contacts.json data file to the
-    /data/ directory.
-2)  In the project directory, install third party dependencies:
+    pip install --upgrade pip
 
-\$ composer up
+    pip install -r requirements.txt
 
-3)  From the parent directory, run the in-built PHP webserver:
-
-php -S localhost:8000 -t php-pimple-contacts-example
-
-​4) The project can now be viewed at the above specified url Notes:
-
-Any questions or problems, please raise an issue on Github:
-
-<https://github.com/Maltronic/php-pimple-contacts-example/issues>
+    python app.py
