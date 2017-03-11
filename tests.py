@@ -7,6 +7,10 @@ class TestCase(unittest.TestCase):
         tester = app.test_client(self)
         self.response = tester.get('/')
 
+    def test_url(self):
+        pass
+
+
     def test_sum(self):
         self.assertEquals(self.response.status_code, 200)
 

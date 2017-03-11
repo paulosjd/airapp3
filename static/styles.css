@@ -1,0 +1,36 @@
+
+body {
+    color: midnightblue;
+}
+
+body{ padding-left: 330px; }
+
+}
+#map-canvas {
+  max-width: 200px;
+  width: 50%;
+  max-height: 200px;
+  height: 80%;
+  border: 1px solid blue;
+}
+
+a {font-size: 20px;padding-left: 18px}
+h3 {padding-left: 18px
+
+}
+h2 {
+  font-size: 26px;margin: 10px;padding-left: 44px
+}
+
+.test {
+    text-align: left
+}
+h3 { font-size: 19px;margin: 20px;
+    display: inline-block;
+}
+
+.left {
+  padding-left: 44px;
+}
+
+.box {border-bottom-width: 8px;border-bottom-color: white;}
