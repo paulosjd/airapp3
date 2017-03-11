@@ -1,7 +1,7 @@
 Airapp3
 =========
 
-A web app currently in development. It is being created using Flask and Highcharts and will contain a user input form which can be used to select sites in London to obtain charts of recent air pollution.
+A web application created using Flask and a javascript plotting library. It enables users to a select air quality monitoring sites in London to obtain charts of recent pollution levels.
 
 
 Install
