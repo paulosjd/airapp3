@@ -295,156 +295,156 @@
     </script>
 </head>
 <body onload="initialize()">
-    <br><h2 class=left>London air pollution charts </h2><br>
+    <br><h2 class=left>Live air pollution charts for London</h2><br>
     <h4 class=left>&nbsp&nbspSelect a 24 hour chart:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Select a timeframe:</h4>
     <div class="container-fluid">
     <div class="row">
     <div class="col-md-4"><br><ul>
-        <a href="{{ url_for('detail', site='BX2', days=1) }}">Bexley - Belvedere</a><br>
-        <a href="{{ url_for('detail', site='BT5', days=1) }}">Brent - Neasden Lane</a><br>
-        <a href="{{ url_for('detail', site='BL0', days=1) }}">Camden - Bloomsbury</a><br>
-        <a href="{{ url_for('detail', site='CD9', days=1) }}">Camden - Euston Road</a><br>
-        <a href="{{ url_for('detail', site='CT4', days=1) }}">City of London - Beech Street</a><br>
-        <a href="{{ url_for('detail', site='CR9', days=1) }}">Croydon - Park Lane</a><br>
-        <a href="{{ url_for('detail', site='EA8', days=1) }}">Ealing - Horn Lane</a><br>
-        <a href="{{ url_for('detail', site='GR7', days=1) }}">Greenwich - Blackheath</a><br>
-        <a href="{{ url_for('detail', site='KC5', days=1) }}">Kensington & Chelsea - Earls Court Rd</a><br>
-        <a href="{{ url_for('detail', site='KC1', days=1) }}">Kensington & Chelsea - Nth Kensington</a><br>
-        <a href="{{ url_for('detail', site='LW2', days=1) }}">Lewisham - New Cross</a><br>
-        <a href="{{ url_for('detail', site='RD0', days=1) }}">Reading - New Town</a><br>
-        <a href="{{ url_for('detail', site='RI2', days=1) }}">Richmond-upon-Thames - Barnes Wetlands</a><br>
-        <a href="{{ url_for('detail', site='ST4', days=1) }}">Sutton - Wallington</a><br>
-        <a href="{{ url_for('detail', site='RI2', days=1) }}">Tower Hamlets - Blackwall</a><br>
-        <a href="{{ url_for('detail', site='WA9', days=1) }}">Wandsworth - Putney</a><br>
-        <a href="{{ url_for('detail', site='MY1', days=1) }}">Westminster - Marylebone Road</a><br>
-        <a href="{{ url_for('detail', site='WM6', days=1) }}">Westminster - Oxford Street</a><br>
+        <a href="{{ url_for('charts.make_chart', site='BX2', days=1) }}">Bexley - Belvedere</a><br>
+        <a href="{{ url_for('charts.make_chart', site='BT5', days=1) }}">Brent - Neasden Lane</a><br>
+        <a href="{{ url_for('charts.make_chart', site='BL0', days=1) }}">Camden - Bloomsbury</a><br>
+        <a href="{{ url_for('charts.make_chart', site='CD9', days=1) }}">Camden - Euston Road</a><br>
+        <a href="{{ url_for('charts.make_chart', site='CT4', days=1) }}">City of London - Beech Street</a><br>
+        <a href="{{ url_for('charts.make_chart', site='CR9', days=1) }}">Croydon - Park Lane</a><br>
+        <a href="{{ url_for('charts.make_chart', site='EA8', days=1) }}">Ealing - Horn Lane</a><br>
+        <a href="{{ url_for('charts.make_chart', site='GR7', days=1) }}">Greenwich - Blackheath</a><br>
+        <a href="{{ url_for('charts.make_chart', site='KC5', days=1) }}">Kensington & Chelsea - Earls Court Rd</a><br>
+        <a href="{{ url_for('charts.make_chart', site='KC1', days=1) }}">Kensington & Chelsea - Nth Kensington</a><br>
+        <a href="{{ url_for('charts.make_chart', site='LW2', days=1) }}">Lewisham - New Cross</a><br>
+        <a href="{{ url_for('charts.make_chart', site='RD0', days=1) }}">Reading - New Town</a><br>
+        <a href="{{ url_for('charts.make_chart', site='RI2', days=1) }}">Richmond-upon-Thames - Barnes Wetlands</a><br>
+        <a href="{{ url_for('charts.make_chart', site='ST4', days=1) }}">Sutton - Wallington</a><br>
+        <a href="{{ url_for('charts.make_chart', site='RI2', days=1) }}">Tower Hamlets - Blackwall</a><br>
+        <a href="{{ url_for('charts.make_chart', site='WA9', days=1) }}">Wandsworth - Putney</a><br>
+        <a href="{{ url_for('charts.make_chart', site='MY1', days=1) }}">Westminster - Marylebone Road</a><br>
+        <a href="{{ url_for('charts.make_chart', site='WM6', days=1) }}">Westminster - Oxford Street</a><br>
     </ul></div><br>
     <div class="col-md-2">
         <select class=box onChange="window.location.href=this.value">
         <option disabled="disabled" selected="selected" value=""></option>
-        <option value="{{ url_for('detail', site='BX2', days=2) }}">48 hours</option>
-        <option value="{{ url_for('detail', site='BX2', days=3) }}">72 hours</option>
-        <option value="{{ url_for('detail', site='BX2', days=5) }}">5 days</option>
-        <option value="{{ url_for('detail', site='BX2', days=7) }}">7 days</option>
+        <option value="{{ url_for('charts.make_chart', site='BX2', days=2) }}">48 hours</option>
+        <option value="{{ url_for('charts.make_chart', site='BX2', days=3) }}">72 hours</option>
+        <option value="{{ url_for('charts.make_chart', site='BX2', days=5) }}">5 days</option>
+        <option value="{{ url_for('charts.make_chart', site='BX2', days=7) }}">7 days</option>
         </select><br>
         <select class=box onChange="window.location.href=this.value">
         <option disabled="disabled" selected="selected" value=""></option>
-        <option value="{{ url_for('detail', site='BT5', days=2) }}">48 hours</option>
-        <option value="{{ url_for('detail', site='BT5', days=3) }}">72 hours</option>
-        <option value="{{ url_for('detail', site='BT5', days=5) }}">5 days</option>
-        <option value="{{ url_for('detail', site='BT5', days=7) }}">7 days</option>
+        <option value="{{ url_for('charts.make_chart', site='BT5', days=2) }}">48 hours</option>
+        <option value="{{ url_for('charts.make_chart', site='BT5', days=3) }}">72 hours</option>
+        <option value="{{ url_for('charts.make_chart', site='BT5', days=5) }}">5 days</option>
+        <option value="{{ url_for('charts.make_chart', site='BT5', days=7) }}">7 days</option>
         </select><br>
         <select class=box onChange="window.location.href=this.value">
         <option disabled="disabled" selected="selected" value=""></option>
-        <option value="{{ url_for('detail', site='BL0', days=2) }}">48 hours</option>
-        <option value="{{ url_for('detail', site='BL0', days=3) }}">72 hours</option>
-        <option value="{{ url_for('detail', site='BL0', days=5) }}">5 days</option>
-        <option value="{{ url_for('detail', site='BL0', days=7) }}">7 days</option>
+        <option value="{{ url_for('charts.make_chart', site='BL0', days=2) }}">48 hours</option>
+        <option value="{{ url_for('charts.make_chart', site='BL0', days=3) }}">72 hours</option>
+        <option value="{{ url_for('charts.make_chart', site='BL0', days=5) }}">5 days</option>
+        <option value="{{ url_for('charts.make_chart', site='BL0', days=7) }}">7 days</option>
         </select><br>
         <select class=box onChange="window.location.href=this.value">
         <option disabled="disabled" selected="selected" value=""></option>
-        <option value="{{ url_for('detail', site='CD9', days=2) }}">48 hours</option>
-        <option value="{{ url_for('detail', site='CD9', days=3) }}">72 hours</option>
-        <option value="{{ url_for('detail', site='CD9', days=5) }}">5 days</option>
-        <option value="{{ url_for('detail', site='CD9', days=7) }}">7 days</option>
+        <option value="{{ url_for('charts.make_chart', site='CD9', days=2) }}">48 hours</option>
+        <option value="{{ url_for('charts.make_chart', site='CD9', days=3) }}">72 hours</option>
+        <option value="{{ url_for('charts.make_chart', site='CD9', days=5) }}">5 days</option>
+        <option value="{{ url_for('charts.make_chart', site='CD9', days=7) }}">7 days</option>
         </select><br>
         <select class=box onChange="window.location.href=this.value">
         <option disabled="disabled" selected="selected" value=""></option>
-        <option value="{{ url_for('detail', site='CT4', days=2) }}">48 hours</option>
-        <option value="{{ url_for('detail', site='CT4', days=3) }}">72 hours</option>
-        <option value="{{ url_for('detail', site='CT4', days=5) }}">5 days</option>
-        <option value="{{ url_for('detail', site='CT4', days=7) }}">7 days</option>
+        <option value="{{ url_for('charts.make_chart', site='CT4', days=2) }}">48 hours</option>
+        <option value="{{ url_for('charts.make_chart', site='CT4', days=3) }}">72 hours</option>
+        <option value="{{ url_for('charts.make_chart', site='CT4', days=5) }}">5 days</option>
+        <option value="{{ url_for('charts.make_chart', site='CT4', days=7) }}">7 days</option>
         </select><br>
         <select class=box onChange="window.location.href=this.value">
         <option disabled="disabled" selected="selected" value=""></option>
-        <option value="{{ url_for('detail', site='CR9', days=2) }}">48 hours</option>
-        <option value="{{ url_for('detail', site='CR9', days=3) }}">72 hours</option>
-        <option value="{{ url_for('detail', site='CR9', days=5) }}">5 days</option>
-        <option value="{{ url_for('detail', site='CR9', days=7) }}">7 days</option>
+        <option value="{{ url_for('charts.make_chart', site='CR9', days=2) }}">48 hours</option>
+        <option value="{{ url_for('charts.make_chart', site='CR9', days=3) }}">72 hours</option>
+        <option value="{{ url_for('charts.make_chart', site='CR9', days=5) }}">5 days</option>
+        <option value="{{ url_for('charts.make_chart', site='CR9', days=7) }}">7 days</option>
         </select><br>
         <select class=box onChange="window.location.href=this.value">
         <option disabled="disabled" selected="selected" value=""></option>
-        <option value="{{ url_for('detail', site='EA8', days=2) }}">48 hours</option>
-        <option value="{{ url_for('detail', site='EA8', days=3) }}">72 hours</option>
-        <option value="{{ url_for('detail', site='EA8', days=5) }}">5 days</option>
-        <option value="{{ url_for('detail', site='EA8', days=7) }}">7 days</option>
+        <option value="{{ url_for('charts.make_chart', site='EA8', days=2) }}">48 hours</option>
+        <option value="{{ url_for('charts.make_chart', site='EA8', days=3) }}">72 hours</option>
+        <option value="{{ url_for('charts.make_chart', site='EA8', days=5) }}">5 days</option>
+        <option value="{{ url_for('charts.make_chart', site='EA8', days=7) }}">7 days</option>
         </select><br>
         <select class=box onChange="window.location.href=this.value">
         <option disabled="disabled" selected="selected" value=""></option>
-        <option value="{{ url_for('detail', site='GR7', days=2) }}">48 hours</option>
-        <option value="{{ url_for('detail', site='GR7', days=3) }}">72 hours</option>
-        <option value="{{ url_for('detail', site='GR7', days=5) }}">5 days</option>
-        <option value="{{ url_for('detail', site='GR7', days=7) }}">7 days</option>
+        <option value="{{ url_for('charts.make_chart', site='GR7', days=2) }}">48 hours</option>
+        <option value="{{ url_for('charts.make_chart', site='GR7', days=3) }}">72 hours</option>
+        <option value="{{ url_for('charts.make_chart', site='GR7', days=5) }}">5 days</option>
+        <option value="{{ url_for('charts.make_chart', site='GR7', days=7) }}">7 days</option>
         </select><br>
         <select class=box onChange="window.location.href=this.value">
         <option disabled="disabled" selected="selected" value=""></option>
-        <option value="{{ url_for('detail', site='KC5', days=2) }}">48 hours</option>
-        <option value="{{ url_for('detail', site='KC5', days=3) }}">72 hours</option>
-        <option value="{{ url_for('detail', site='KC5', days=5) }}">5 days</option>
-        <option value="{{ url_for('detail', site='KC5', days=7) }}">7 days</option>
+        <option value="{{ url_for('charts.make_chart', site='KC5', days=2) }}">48 hours</option>
+        <option value="{{ url_for('charts.make_chart', site='KC5', days=3) }}">72 hours</option>
+        <option value="{{ url_for('charts.make_chart', site='KC5', days=5) }}">5 days</option>
+        <option value="{{ url_for('charts.make_chart', site='KC5', days=7) }}">7 days</option>
         </select><br>
         <select class=box onChange="window.location.href=this.value">
         <option disabled="disabled" selected="selected" value=""></option>
-        <option value="{{ url_for('detail', site='KC1', days=2) }}">48 hours</option>
-        <option value="{{ url_for('detail', site='KC1', days=3) }}">72 hours</option>
-        <option value="{{ url_for('detail', site='KC1', days=5) }}">5 days</option>
-        <option value="{{ url_for('detail', site='KC1', days=7) }}">7 days</option>
+        <option value="{{ url_for('charts.make_chart', site='KC1', days=2) }}">48 hours</option>
+        <option value="{{ url_for('charts.make_chart', site='KC1', days=3) }}">72 hours</option>
+        <option value="{{ url_for('charts.make_chart', site='KC1', days=5) }}">5 days</option>
+        <option value="{{ url_for('charts.make_chart', site='KC1', days=7) }}">7 days</option>
         </select><br>
         <select class=box onChange="window.location.href=this.value">
         <option disabled="disabled" selected="selected" value=""></option>
-        <option value="{{ url_for('detail', site='LW2', days=2) }}">48 hours</option>
-        <option value="{{ url_for('detail', site='LW2', days=3) }}">72 hours</option>
-        <option value="{{ url_for('detail', site='LW2', days=5) }}">5 days</option>
-        <option value="{{ url_for('detail', site='LW2', days=7) }}">7 days</option>
+        <option value="{{ url_for('charts.make_chart', site='LW2', days=2) }}">48 hours</option>
+        <option value="{{ url_for('charts.make_chart', site='LW2', days=3) }}">72 hours</option>
+        <option value="{{ url_for('charts.make_chart', site='LW2', days=5) }}">5 days</option>
+        <option value="{{ url_for('charts.make_chart', site='LW2', days=7) }}">7 days</option>
         </select><br>
         <select class=box onChange="window.location.href=this.value">
         <option disabled="disabled" selected="selected" value=""></option>
-        <option value="{{ url_for('detail', site='RD0', days=2) }}">48 hours</option>
-        <option value="{{ url_for('detail', site='RD0', days=3) }}">72 hours</option>
-        <option value="{{ url_for('detail', site='RD0', days=5) }}">5 days</option>
-        <option value="{{ url_for('detail', site='RD0', days=7) }}">7 days</option>
+        <option value="{{ url_for('charts.make_chart', site='RD0', days=2) }}">48 hours</option>
+        <option value="{{ url_for('charts.make_chart', site='RD0', days=3) }}">72 hours</option>
+        <option value="{{ url_for('charts.make_chart', site='RD0', days=5) }}">5 days</option>
+        <option value="{{ url_for('charts.make_chart', site='RD0', days=7) }}">7 days</option>
         </select><br>
         <select class=box onChange="window.location.href=this.value">
         <option disabled="disabled" selected="selected" value=""></option>
-        <option value="{{ url_for('detail', site='RI2', days=2) }}">48 hours</option>
-        <option value="{{ url_for('detail', site='RI2', days=3) }}">72 hours</option>
-        <option value="{{ url_for('detail', site='RI2', days=5) }}">5 days</option>
-        <option value="{{ url_for('detail', site='RI2', days=7) }}">7 days</option>
+        <option value="{{ url_for('charts.make_chart', site='RI2', days=2) }}">48 hours</option>
+        <option value="{{ url_for('charts.make_chart', site='RI2', days=3) }}">72 hours</option>
+        <option value="{{ url_for('charts.make_chart', site='RI2', days=5) }}">5 days</option>
+        <option value="{{ url_for('charts.make_chart', site='RI2', days=7) }}">7 days</option>
         </select><br>
         <select class=box onChange="window.location.href=this.value">
         <option disabled="disabled" selected="selected" value=""></option>
-        <option value="{{ url_for('detail', site='ST4', days=2) }}">48 hours</option>
-        <option value="{{ url_for('detail', site='ST4', days=3) }}">72 hours</option>
-        <option value="{{ url_for('detail', site='ST4', days=5) }}">5 days</option>
-        <option value="{{ url_for('detail', site='ST4', days=7) }}">7 days</option>
+        <option value="{{ url_for('charts.make_chart', site='ST4', days=2) }}">48 hours</option>
+        <option value="{{ url_for('charts.make_chart', site='ST4', days=3) }}">72 hours</option>
+        <option value="{{ url_for('charts.make_chart', site='ST4', days=5) }}">5 days</option>
+        <option value="{{ url_for('charts.make_chart', site='ST4', days=7) }}">7 days</option>
         </select><br>
         <select class=box onChange="window.location.href=this.value">
         <option disabled="disabled" selected="selected" value=""></option>
-        <option value="{{ url_for('detail', site='TH4', days=2) }}">48 hours</option>
-        <option value="{{ url_for('detail', site='TH4', days=3) }}">72 hours</option>
-        <option value="{{ url_for('detail', site='TH4', days=5) }}">5 days</option>
-        <option value="{{ url_for('detail', site='TH4', days=7) }}">7 days</option>
+        <option value="{{ url_for('charts.make_chart', site='TH4', days=2) }}">48 hours</option>
+        <option value="{{ url_for('charts.make_chart', site='TH4', days=3) }}">72 hours</option>
+        <option value="{{ url_for('charts.make_chart', site='TH4', days=5) }}">5 days</option>
+        <option value="{{ url_for('charts.make_chart', site='TH4', days=7) }}">7 days</option>
         </select><br>
         <select class=box onChange="window.location.href=this.value">
         <option disabled="disabled" selected="selected" value=""></option>
-        <option value="{{ url_for('detail', site='WA9', days=2) }}">48 hours</option>
-        <option value="{{ url_for('detail', site='WA9', days=3) }}">72 hours</option>
-        <option value="{{ url_for('detail', site='WA9', days=5) }}">5 days</option>
-        <option value="{{ url_for('detail', site='WA9', days=7) }}">7 days</option>
+        <option value="{{ url_for('charts.make_chart', site='WA9', days=2) }}">48 hours</option>
+        <option value="{{ url_for('charts.make_chart', site='WA9', days=3) }}">72 hours</option>
+        <option value="{{ url_for('charts.make_chart', site='WA9', days=5) }}">5 days</option>
+        <option value="{{ url_for('charts.make_chart', site='WA9', days=7) }}">7 days</option>
         </select><br>
         <select class=box onChange="window.location.href=this.value">
         <option disabled="disabled" selected="selected" value=""></option>
-        <option value="{{ url_for('detail', site='MY1', days=2) }}">48 hours</option>
-        <option value="{{ url_for('detail', site='MY1', days=3) }}">72 hours</option>
-        <option value="{{ url_for('detail', site='MY1', days=5) }}">5 days</option>
-        <option value="{{ url_for('detail', site='MY1', days=7) }}">7 days</option>
+        <option value="{{ url_for('charts.make_chart', site='MY1', days=2) }}">48 hours</option>
+        <option value="{{ url_for('charts.make_chart', site='MY1', days=3) }}">72 hours</option>
+        <option value="{{ url_for('charts.make_chart', site='MY1', days=5) }}">5 days</option>
+        <option value="{{ url_for('charts.make_chart', site='MY1', days=7) }}">7 days</option>
         </select><br>
         <select class=box onChange="window.location.href=this.value">
         <option disabled="disabled" selected="selected" value=""></option>
-        <option value="{{ url_for('detail', site='WM6', days=2) }}">48 hours</option>
-        <option value="{{ url_for('detail', site='WM6', days=3) }}">72 hours</option>
-        <option value="{{ url_for('detail', site='WM6', days=5) }}">5 days</option>
-        <option value="{{ url_for('detail', site='WM6', days=7) }}">7 days</option>
+        <option value="{{ url_for('charts.make_chart', site='WM6', days=2) }}">48 hours</option>
+        <option value="{{ url_for('charts.make_chart', site='WM6', days=3) }}">72 hours</option>
+        <option value="{{ url_for('charts.make_chart', site='WM6', days=5) }}">5 days</option>
+        <option value="{{ url_for('charts.make_chart', site='WM6', days=7) }}">7 days</option>
 </select>
     </div>
     <div class="col-md-6">
