@@ -17,8 +17,6 @@ class TestCase(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-
-
 """
     def setUp(self):
         self.data = {"AirQualityData": {"@SiteCode": "MY1",
