@@ -1,7 +1,7 @@
 Airapp3
 =========
 
-A web application created using Flask and a javascript plotting library. It enables users to a select air quality monitoring sites in London to obtain charts of recent pollution levels.
+A web application created using Flask and a JavaScript plotting library. It enables users to obtain live charts of recent pollution levels for various monitoring sites in London.
 
 
 Install
@@ -21,7 +21,7 @@ Dependencies:
 Configure and run server:
 ------------------------
 
-After Cloning or downloading project files, run the following commands from the project's root directory:
+After cloning or downloading project files, run the following commands from the project's root directory:
 
     pip install --upgrade pip
 
