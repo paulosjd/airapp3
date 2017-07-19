@@ -57,6 +57,6 @@ def make_chart(site='MY1', days=1, chartID='chart_ID', chart_type='line', chart_
     title = {"text": 'Recent air pollution levels:   ' + (custom_strftime('%B {S}, %Y', datetime.now()))}
     xaxis = {"categories": data_dict['hours'][days * -24:]}
     yaxis = {"title": {"text": 'Concentration (ug/m3)'}}
-    return render_template('detail.html', site_name=metadata_dict['site_name'], site_type=metadata_dict['site_name'],
+    return render_template('detail.html', site_name=metadata_dict['site_name'], site_type=metadata_dict['site_type'],
                            chartID=chartID, chart=chart, series=series, title=title, xAxis=xaxis, yAxis=yaxis)
 
