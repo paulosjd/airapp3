@@ -32,13 +32,13 @@ def get_data(site, days):
     return dict(pm1 = pm1, pm2 = pm2, no2 = no2, hours = hours)
 
 
-def get_data_url(site):
+def get_metadata_url(site):
     url = 'http://api.erg.kcl.ac.uk/AirQuality/Daily/MonitoringIndex/Latest/SiteCode={}/json'.format(site)
     return url
 
 
 def get_metadata(site):
-    url = get_data_url(site)
+    url = get_metadata_url(site)
     resp = requests.get(url)
     data = resp.json()
     info_array = data['DailyAirQualityIndex']["LocalAuthority"]["Site"]
