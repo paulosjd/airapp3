@@ -1,7 +1,7 @@
 Airapp3
 =========
 
-A web application created using Flask and a JavaScript plotting library. It enables users to obtain live charts of recent pollution levels for various monitoring sites in London.
+A web application created using Flask and HighCharts, a JavaScript plotting library. It enables users to obtain live charts of recent pollution levels for various monitoring sites in London.
 
 
 Install
