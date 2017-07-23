@@ -3,11 +3,16 @@ import requests
 from datetime import datetime, timedelta
 
 
-def get_json(site, days):
-    start_time = (datetime.now() - timedelta(days)).strftime("%d %b %Y")
+def get_json_url(site, days):
+    start = (datetime.now() - timedelta(days)).strftime("%d %b %Y")
     tomorrow = (datetime.now() + timedelta(1)).strftime("%d %b %Y")
     url = 'http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode={0}/StartDate={1}/EndDate={2}/Json'.format(site,
-           start_time, tomorrow).replace(' ','%20')
+           start, tomorrow).replace(' ', '%20')
+    return url
+
+
+def get_json(site, days):
+    url = get_json_url(site, days)
     resp = requests.get(url)
     data = resp.json()
     array = data['AirQualityData']['Data']
@@ -27,8 +32,13 @@ def get_data(site, days):
     return dict(pm1 = pm1, pm2 = pm2, no2 = no2, hours = hours)
 
 
-def get_metadata(site):
+def get_data_url(site):
     url = 'http://api.erg.kcl.ac.uk/AirQuality/Daily/MonitoringIndex/Latest/SiteCode={}/json'.format(site)
+    return url
+
+
+def get_metadata(site):
+    url = get_data_url(site)
     resp = requests.get(url)
     data = resp.json()
     info_array = data['DailyAirQualityIndex']["LocalAuthority"]["Site"]
