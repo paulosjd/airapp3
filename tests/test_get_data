@@ -1,0 +1,1 @@
+from views.charts import get_data
