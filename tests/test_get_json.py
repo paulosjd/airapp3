@@ -24,3 +24,6 @@ class TestCase(unittest.TestCase):
     def test_dict_structure(self):
         self.assertEqual(self.data1, self.data2)
 
+
+if __name__ == '__main__':
+    unittest.main()
