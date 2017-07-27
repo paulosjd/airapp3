@@ -17,4 +17,4 @@ class TestCase(unittest.TestCase):       
             d[value] = '1'
     
     def test_dict_structure(self):                       
-        AssertEqual(self.get_json_array, self.my1_array)
+        self.AssertEqual(self.get_json_array, self.my1_array)
