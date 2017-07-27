@@ -4,7 +4,8 @@ import get_json
 
 
 json_data = open('mock_data/my1_data.json')
-data = json.load(json_data)my1_array = data['AirQualityData']['Data']
+data = json.load(json_data)
+my1_array = data['AirQualityData']['Data']
 
 
 class TestCase(unittest.TestCase):
