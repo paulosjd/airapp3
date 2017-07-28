@@ -22,7 +22,7 @@ class TestCase(unittest.TestCase):
         self.data1 = get_json_array        
         self.data2 = my1_array
 
-    def test_dict_structure(self):
+    def test_list_of_dicts_structure(self):
         self.assertEqual(self.data1, self.data2)
 
 
