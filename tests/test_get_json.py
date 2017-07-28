@@ -1,6 +1,6 @@
 import unittest
-import jsonfrom views.charts 
-import get_json
+import json
+from views.charts import get_json
 
 
 json_data = open('mock_data/my1_data.json')
