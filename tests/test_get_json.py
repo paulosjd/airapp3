@@ -3,23 +3,25 @@ import json
 from views.charts import get_json
 
 
+"""get_json should with a list of dicts as follows:
+   [{'@MeasurementDateGMT': '...', '@SpeciesCode': '...', '@Value': '...'},
+    ...., {'@MeasurementDateGMT': '...', '@SpeciesCode': '...', '@Value': '...'}]"""
+
 json_data = open('mock_data/my1_data.json')
 data = json.load(json_data)
 my1_array = data['AirQualityData']['Data']
 
 
 class TestCase(unittest.TestCase):
-    
-    # Change values to allow for different dates    
-    def setUp(self):        
+
+    # Change values to allow for different dates
+    def setUp(self):
         get_json_array = get_json('MY1', 3)
         for d in get_json_array:
-            for value in d:
-                d[value] = '1'        
-        for d in my1_array:            
-            for value in d:
-                d[value] = '1'        
-        self.data1 = get_json_array        
+            d.update((k, '1') for k, v in d.items())   #Just change '@Value' as done in test_get_data??
+        for d in my1_array:
+            d.update((k, '1') for k, v in d.items())
+        self.data1 = get_json_array
         self.data2 = my1_array
 
     def test_list_of_dicts_structure(self):
@@ -28,3 +30,4 @@ class TestCase(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
