@@ -21,8 +21,8 @@ class TestCase(unittest.TestCase):
             d.update((k, '1') for k, v in d.items())   #Just change '@Value' as done in test_get_data??
         for d in my1_array:
             d.update((k, '1') for k, v in d.items())
-        self.data1 = get_json_array
-        self.data2 = my1_array
+        self.data1 = get_json_array[0]
+        self.data2 = my1_array[0]
 
     def test_list_of_dicts_structure(self):
         self.assertEqual(self.data1, self.data2)
