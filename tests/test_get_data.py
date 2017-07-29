@@ -20,9 +20,9 @@ class TestCase(unittest.TestCase):
     def setUp(self):
         get_data_dict = get_data('MY1', 3)
         for d in get_data_dict:
-            d.update((k, '1') for k, v in d.items() if k == '@Value' and v != 'hours')
+            d.update((k, '1') for k, v in d.items())
         for d in my1_dict:
-            d.update((k, '1') for k, v in d.items() if k == '@Value' and v != 'hours')
+            d.update((k, '1') for k, v in d.items())
         self.data1 = get_data_dict
         self.data2 = my1_dict
 

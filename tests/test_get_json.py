@@ -18,7 +18,7 @@ class TestCase(unittest.TestCase):
     def setUp(self):
         get_json_array = get_json('MY1', 3)
         for d in get_json_array:
-            d.update((k, '1') for k, v in d.items())   #Just change '@Value' as done in test_get_data??
+            d.update((k, '1') for k, v in d.items())   
         for d in my1_array:
             d.update((k, '1') for k, v in d.items())
         self.data1 = get_json_array[0]
