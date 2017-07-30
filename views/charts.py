@@ -29,7 +29,7 @@ def get_data(site, days):
           days * -24:]
     hours = list(map(lambda x: datetime.strptime(x, "%Y-%m-%d %H:%M:%S").strftime('%H:%M'), ([d['@MeasurementDateGMT']
                                                                                               for d in array])))
-    return dict(pm1 = pm1, pm2 = pm2, no2 = no2, hours = hours)
+    return dict(pm1=pm1, pm2=pm2, no2=no2, hours=hours)
 
 
 def get_metadata_url(site):

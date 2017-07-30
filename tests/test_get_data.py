@@ -20,11 +20,13 @@ class TestCase(unittest.TestCase):
     def setUp(self):
         get_data_dict = get_data('MY1', 3)
         for d in get_data_dict:
-            d.update((k, '1') for k, v in d.items())
+            for value in d:
+                d[value] = '1'
         for d in my1_dict:
-            d.update((k, '1') for k, v in d.items())
-        self.data1 = get_data_dict
-        self.data2 = my1_dict
+            for value in d:
+                d[value] = '1'
+        self.data1 = get_data_dict[0]
+        self.data2 = my1_dict[0]
 
     def test_dict_structure(self):
         self.assertEqual(self.data1, self.data2)

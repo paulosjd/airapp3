@@ -1,18 +1,23 @@
 import unittest
 import json
-from views.charts import get_json
-json_data = open('mock_data/my1_data.json')
-data = json.load(json_data)
-my1_array = data['AirQualityData']['Data']
+from views.charts import get_data
 
-get_json_array = get_json('MY1', 3)
-for d in get_json_array:
-    d.update((k, '1') for k, v in d.items() if k == '@Value' and v != 'hours')  # Just change '@Value' as done in test_get_data??
-for d in my1_array:
-    d.update((k, '1') for k, v in d.items() if k == '@Value' and v != 'hours')
 
-print(get_json_array[0])
-print(my1_array[0])
+"""get_data() should return a dictionary with the following structure:
+{'hours': ['00:00', '01:00', ..... '23:00'],
+ 'no2': [41.7,.... 53.2],
+ 'pm1': [22.9,.....24.3],
+ 'pm2': ['', .... '', '']}"""
 
-#if get_json_array[0] == my1_array[0]:
- #   print(3)
+
+
+
+
+get_data_dict = get_data('MY1', 3)
+get_data_dict.update((k, '1') for k, v in get_data_dict.items())
+
+
+
+print (get_data_dict )
+
+
