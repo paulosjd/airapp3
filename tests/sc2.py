@@ -15,8 +15,7 @@ no2_len_1 = length_dict_1['no2']
 print(hours_len_1)
 print(no2_len_1)
 
-json_data2 = open('mock_data/my1_dict.json')
-my1_dict = json.load(json_data2)
+
 
 length_dict_2 = {key: len(value) for key, value in my1_dict.items()}
 hours_len_2 = length_dict_2['hours']

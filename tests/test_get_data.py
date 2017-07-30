@@ -16,20 +16,37 @@ my1_dict = json.load(json_data2)
 
 class TestCase(unittest.TestCase):
 
-    # Change values to allow for different dates, except for datetime values to test values assigned to hours variable
+    # Test that lengths of dictionary values are correct
+
+    get_data_dict = get_data('MY1', 3)
+
+    length_dict_1 = {key: len(value) for key, value in get_data_dict.items()}
+    hours_len_1 = length_dict_1['hours']
+    no2_len_1 = length_dict_1['no2']
+    print(hours_len_1)
+    print(no2_len_1)
+
+    length_dict_2 = {key: len(value) for key, value in my1_dict.items()}
+    hours_len_2 = length_dict_2['hours']
+    no2_len_2 = length_dict_2['no2']
+    print(hours_len_2)
+    print(no2_len_2)
+
     def setUp(self):
         get_data_dict = get_data('MY1', 3)
-        for d in get_data_dict:
-            for value in d:
-                d[value] = '1'
-        for d in my1_dict:
-            for value in d:
-                d[value] = '1'
-        self.data1 = get_data_dict[0]
-        self.data2 = my1_dict[0]
+        length_dict_1 = {key: len(value) for key, value in get_data_dict.items()}
+        length_dict_2 = {key: len(value) for key, value in my1_dict.items()}
+        self.hours_len_1 = length_dict_1['hours']
+        self.no2_len_1 = length_dict_1['no2']
+        self.hours_len_2 = length_dict_2['hours']
+        self.no2_len_2 = length_dict_2['no2']
 
-    def test_dict_structure(self):
-        self.assertEqual(self.data1, self.data2)
+
+    def test_hours_length(self):
+        self.assertEqual(self.hours_len_1, self.hours_len_2)
+
+    def test_no2_length(self):
+        self.assertEqual(self.no2_len_1, self.no2_len_2)
 
 
 if __name__ == '__main__':
