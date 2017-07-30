@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="357eede0-b68e-4e33-9219-35b3deb05bf3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/scrapy" afterPath="$PROJECT_DIR$/tests/scrapy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/test_get_data.py" afterPath="$PROJECT_DIR$/tests/test_get_data.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/test_get_json.py" afterPath="$PROJECT_DIR$/tests/test_get_json.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/charts.py" afterPath="$PROJECT_DIR$/views/charts.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/mock_data/my1_dict.json" afterPath="$PROJECT_DIR$/tests/mock_data/my1_dict.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/sc2.py" afterPath="$PROJECT_DIR$/tests/sc2.py" />
     </list>
     <ignored path="hcharts.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -100,8 +97,8 @@
       <file leaf-file-name="sc2.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tests/sc2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+            <state relative-caret-position="594">
+              <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -112,8 +109,8 @@
       <file leaf-file-name="my1_dict.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/mock_data/my1_dict.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6237">
-              <caret line="189" column="10" selection-start-line="189" selection-start-column="10" selection-end-line="189" selection-end-column="10" />
+            <state relative-caret-position="231">
+              <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -176,6 +173,7 @@
         <option value="$PROJECT_DIR$/tests/test_get_data.py" />
         <option value="$PROJECT_DIR$/views/charts.py" />
         <option value="$PROJECT_DIR$/tests/scrapy" />
+        <option value="$PROJECT_DIR$/tests/mock_data/my1_dict.json" />
         <option value="$PROJECT_DIR$/tests/sc2.py" />
       </list>
     </option>
@@ -283,7 +281,7 @@
       <recent name="C:\Users\Paul\Desktop\airapp3\hcharts" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.sc2">
+  <component name="RunManager" selected="Python tests.py.test in test_get_data.py">
     <configuration default="false" name="scrapy" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -299,30 +297,6 @@
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/scrapy" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="py.test in test_get_json.py" type="tests" factoryName="py.test" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="hcharts" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="testToRun" value="$PROJECT_DIR$/tests/test_get_json.py" />
-      <option name="keywords" value="" />
-      <option name="params" value="" />
-      <option name="USE_PARAM" value="false" />
-      <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
     <configuration default="false" name="py.test in TestCase" type="tests" factoryName="py.test" temporary="true">
@@ -388,6 +362,30 @@
       <option name="params" value="" />
       <option name="USE_PARAM" value="false" />
       <option name="USE_KEYWORD" value="true" />
+      <method />
+    </configuration>
+    <configuration default="false" name="py.test in test_get_data.py" type="tests" factoryName="py.test" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="hcharts" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="$PROJECT_DIR$/tests/test_get_data.py" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
@@ -526,18 +524,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.scrapy" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.py.test in test_get_json.py" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.py.test in TestCase" />
-      <item index="3" class="java.lang.String" itemvalue="Python.sc2" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.py.test in TestCase (1)" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.py.test in TestCase" />
+      <item index="2" class="java.lang.String" itemvalue="Python.sc2" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.py.test in TestCase (1)" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.py.test in test_get_data.py" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.sc2" />
-        <item index="1" class="java.lang.String" itemvalue="Python.scrapy" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.py.test in TestCase" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.py.test in TestCase (1)" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.py.test in test_get_json.py" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.py.test in test_get_data.py" />
+        <item index="1" class="java.lang.String" itemvalue="Python.sc2" />
+        <item index="2" class="java.lang.String" itemvalue="Python.scrapy" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.py.test in TestCase" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.py.test in TestCase (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -573,14 +571,14 @@
     <history-entry file="py_test_in_TestCase_(1) - 2017.07.29 at 17h 59m 20s.xml">
       <configuration name="py.test in TestCase (1)" configurationId="tests" />
     </history-entry>
+    <history-entry file="py_test_in_test_get_data_py - 2017.07.30 at 08h 35m 35s.xml">
+      <configuration name="py.test in test_get_data.py" configurationId="tests" />
+    </history-entry>
     <history-entry file="py_test_in_test_get_json_py - 2017.07.29 at 17h 21m 29s.xml">
       <configuration name="py.test in test_get_json.py" configurationId="tests" />
     </history-entry>
     <history-entry file="py_test_in_test_get_json_py - 2017.07.29 at 17h 26m 12s.xml">
       <configuration name="py.test in test_get_json.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_in_tests_py - 2017.07.23 at 09h 36m 54s.xml">
-      <configuration name="py.test in tests.py" configurationId="tests" />
     </history-entry>
     <history-entry file="py_test_in_tests_py_(1) - 2017.02.26 at 22h 12m 02s.xml">
       <configuration name="py.test in tests.py (1)" configurationId="tests" />
@@ -783,6 +781,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tests/mock_data/my1_data.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/mock_data/my1_dict.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tests/test_get_metadata.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -801,22 +815,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/mock_data/my1_data.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/mock_data/my1_dict.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6237">
-          <caret line="189" column="10" selection-start-line="189" selection-start-column="10" selection-end-line="189" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/scrapy">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -829,8 +827,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/sc2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+        <state relative-caret-position="594">
+          <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
