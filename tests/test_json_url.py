@@ -9,5 +9,5 @@ class TestGet_urls(TestCase):
                             'EndDate=24%20Jul%202017/Json'
 
     def test_get_urls(self):
-        url = get_json_url('MY1', 2)
-        self.assertEqual(url, self.expected_url)
+        url = get_json_url('MY1', 3)
+        self.assertEqual(url.status_code, 200)

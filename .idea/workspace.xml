@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="357eede0-b68e-4e33-9219-35b3deb05bf3" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/sc2.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/scrapy" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/reg.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/.cache/v/cache/lastfailed" afterPath="$PROJECT_DIR$/tests/.cache/v/cache/lastfailed" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/test_json_url.py" afterPath="$PROJECT_DIR$/tests/test_json_url.py" />
     </list>
     <ignored path="hcharts.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -72,7 +73,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_get_metadata.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="test_get_metadata.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/test_get_metadata.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
@@ -82,18 +83,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="my1_dict.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/mock_data/my1_dict.json">
+      <file leaf-file-name="test_json_url.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/test_json_url.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="7" column="97" selection-start-line="7" selection-start-column="97" selection-end-line="7" selection-end-column="97" />
+              <folding>
+                <element signature="e#0#29#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_metadata_url.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/test_metadata_url.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="363">
-              <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="my1_data.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/mock_data/my1_data.json">
+      <file leaf-file-name="reg.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tests/reg.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -139,7 +152,6 @@
         <option value="$PROJECT_DIR$/views/index.py" />
         <option value="$PROJECT_DIR$/tests/test_data_url.py" />
         <option value="$PROJECT_DIR$/app.py" />
-        <option value="$PROJECT_DIR$/tests/test_json_url.py" />
         <option value="$PROJECT_DIR$/tests/test_metadata_url.py" />
         <option value="$PROJECT_DIR$/tests/tests.py" />
         <option value="$PROJECT_DIR$/tests/test_config.py" />
@@ -151,6 +163,8 @@
         <option value="$PROJECT_DIR$/tests/mock_data/my1_dict.json" />
         <option value="$PROJECT_DIR$/tests/sc2.py" />
         <option value="$PROJECT_DIR$/tests/test_get_data.py" />
+        <option value="$PROJECT_DIR$/tests/test_json_url.py" />
+        <option value="$PROJECT_DIR$/tests/reg.py" />
       </list>
     </option>
   </component>
@@ -257,24 +271,7 @@
       <recent name="C:\Users\Paul\Desktop\airapp3\hcharts" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.py.test in test_get_data.py">
-    <configuration default="false" name="scrapy" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="hcharts" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/scrapy" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python tests.py.test in test_json_url.py">
     <configuration default="false" name="py.test in TestCase" type="tests" factoryName="py.test" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -297,23 +294,6 @@
       <option name="params" value="" />
       <option name="USE_PARAM" value="false" />
       <option name="USE_KEYWORD" value="true" />
-      <method />
-    </configuration>
-    <configuration default="false" name="sc2" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="hcharts" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/sc2.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
     <configuration default="false" name="py.test in test_get_data.py" type="tests" factoryName="py.test" temporary="true">
@@ -362,6 +342,54 @@
       <option name="params" value="" />
       <option name="USE_PARAM" value="false" />
       <option name="USE_KEYWORD" value="true" />
+      <method />
+    </configuration>
+    <configuration default="false" name="py.test in test_metadata_url.py" type="tests" factoryName="py.test" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="hcharts" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="$PROJECT_DIR$/tests/test_metadata_url.py" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="py.test in test_json_url.py" type="tests" factoryName="py.test" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="hcharts" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="$PROJECT_DIR$/tests/test_json_url.py" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
@@ -499,19 +527,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.scrapy" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.py.test in TestCase" />
-      <item index="2" class="java.lang.String" itemvalue="Python.sc2" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.py.test in test_get_data.py" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.py.test in TestCase and test_hours_length" />
+      <item index="0" class="java.lang.String" itemvalue="Python tests.py.test in TestCase" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.py.test in test_get_data.py" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.py.test in TestCase and test_hours_length" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.py.test in test_metadata_url.py" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.py.test in test_json_url.py" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.py.test in test_get_data.py" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.py.test in TestCase and test_hours_length" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.py.test in TestCase" />
-        <item index="3" class="java.lang.String" itemvalue="Python.sc2" />
-        <item index="4" class="java.lang.String" itemvalue="Python.scrapy" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.py.test in test_json_url.py" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.py.test in test_metadata_url.py" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.py.test in test_get_data.py" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.py.test in TestCase and test_hours_length" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.py.test in TestCase" />
       </list>
     </recent_temporary>
   </component>
@@ -529,23 +557,11 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="py_test_in_TestCase - 2017.07.29 at 17h 26m 45s.xml">
-      <configuration name="py.test in TestCase" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_in_TestCase - 2017.07.29 at 17h 33m 09s.xml">
-      <configuration name="py.test in TestCase" configurationId="tests" />
-    </history-entry>
     <history-entry file="py_test_in_TestCase - 2017.07.29 at 17h 59m 31s.xml">
       <configuration name="py.test in TestCase" configurationId="tests" />
     </history-entry>
     <history-entry file="py_test_in_TestCase - 2017.07.30 at 08h 52m 31s.xml">
       <configuration name="py.test in TestCase" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_in_TestCase_(1) - 2017.07.29 at 17h 48m 29s.xml">
-      <configuration name="py.test in TestCase (1)" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_in_TestCase_(1) - 2017.07.29 at 17h 58m 25s.xml">
-      <configuration name="py.test in TestCase (1)" configurationId="tests" />
     </history-entry>
     <history-entry file="py_test_in_TestCase_(1) - 2017.07.29 at 17h 59m 20s.xml">
       <configuration name="py.test in TestCase (1)" configurationId="tests" />
@@ -558,6 +574,18 @@
     </history-entry>
     <history-entry file="py_test_in_test_get_data_py - 2017.07.30 at 08h 54m 50s.xml">
       <configuration name="py.test in test_get_data.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_test_json_url_py - 2017.07.30 at 09h 01m 20s.xml">
+      <configuration name="py.test in test_json_url.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_test_json_url_py - 2017.07.30 at 09h 01m 44s.xml">
+      <configuration name="py.test in test_json_url.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_test_json_url_py - 2017.07.30 at 09h 03m 19s.xml">
+      <configuration name="py.test in test_json_url.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_test_metadata_url_py - 2017.07.30 at 09h 01m 09s.xml">
+      <configuration name="py.test in test_metadata_url.py" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -604,16 +632,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="12" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/one_week.py" />
     <entry file="file://$PROJECT_DIR$/variable_hours.py" />
     <entry file="file://$PROJECT_DIR$/../airapp2/air.py" />
@@ -685,20 +703,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test_metadata_url.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test_json_url.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="12" column="47" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
         </state>
       </provider>
     </entry>
@@ -800,6 +804,32 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/test_get_metadata.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_json_url.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="7" column="97" selection-start-line="7" selection-start-column="97" selection-end-line="7" selection-end-column="97" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_metadata_url.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/reg.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
