@@ -17,10 +17,6 @@ my1_dict = json.load(json_data2)
 class TestCase(unittest.TestCase):
 
     # Test that lengths of dictionary values are correct
-
-    get_data_dict = get_data('MY1', 3)
-
-
     def setUp(self):
         get_data_dict = get_data('MY1', 3)
         length_dict_1 = {key: len(value) for key, value in get_data_dict.items()}
