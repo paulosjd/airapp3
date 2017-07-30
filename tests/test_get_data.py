@@ -20,17 +20,6 @@ class TestCase(unittest.TestCase):
 
     get_data_dict = get_data('MY1', 3)
 
-    length_dict_1 = {key: len(value) for key, value in get_data_dict.items()}
-    hours_len_1 = length_dict_1['hours']
-    no2_len_1 = length_dict_1['no2']
-    print(hours_len_1)
-    print(no2_len_1)
-
-    length_dict_2 = {key: len(value) for key, value in my1_dict.items()}
-    hours_len_2 = length_dict_2['hours']
-    no2_len_2 = length_dict_2['no2']
-    print(hours_len_2)
-    print(no2_len_2)
 
     def setUp(self):
         get_data_dict = get_data('MY1', 3)
@@ -40,7 +29,6 @@ class TestCase(unittest.TestCase):
         self.no2_len_1 = length_dict_1['no2']
         self.hours_len_2 = length_dict_2['hours']
         self.no2_len_2 = length_dict_2['no2']
-
 
     def test_hours_length(self):
         self.assertEqual(self.hours_len_1, self.hours_len_2)
