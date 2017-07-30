@@ -18,4 +18,3 @@ class TestGet_urls(TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-

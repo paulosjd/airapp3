@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="357eede0-b68e-4e33-9219-35b3deb05bf3" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/reg.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/.cache/v/cache/lastfailed" afterPath="$PROJECT_DIR$/tests/.cache/v/cache/lastfailed" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/test_json_url.py" afterPath="$PROJECT_DIR$/tests/test_json_url.py" />
     </list>
@@ -85,21 +86,11 @@
       <file leaf-file-name="test_json_url.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tests/test_json_url.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="11" column="49" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
+            <state relative-caret-position="660">
+              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="reg.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/reg.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="12" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -539,9 +530,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="py_test_in_TestCase - 2017.07.29 at 17h 59m 31s.xml">
-      <configuration name="py.test in TestCase" configurationId="tests" />
-    </history-entry>
     <history-entry file="py_test_in_TestCase - 2017.07.30 at 08h 52m 31s.xml">
       <configuration name="py.test in TestCase" configurationId="tests" />
     </history-entry>
@@ -564,6 +552,9 @@
       <configuration name="py.test in test_json_url.py" configurationId="tests" />
     </history-entry>
     <history-entry file="py_test_in_test_json_url_py - 2017.07.30 at 09h 37m 29s.xml">
+      <configuration name="py.test in test_json_url.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_test_json_url_py - 2017.07.30 at 09h 37m 52s.xml">
       <configuration name="py.test in test_json_url.py" configurationId="tests" />
     </history-entry>
     <history-entry file="py_test_in_test_metadata_url_py - 2017.07.30 at 09h 01m 09s.xml">
@@ -783,14 +774,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/reg.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/test_get_json.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
@@ -809,10 +792,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tests/reg.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tests/test_json_url.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="11" column="49" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
+        <state relative-caret-position="660">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>
