@@ -1,13 +1,13 @@
 from flask import render_template, Blueprint
-import requests
 from datetime import datetime, timedelta
+import requests
 
 
 def get_json_url(site, days):
     start = (datetime.now() - timedelta(days)).strftime("%d %b %Y")
     tomorrow = (datetime.now() + timedelta(1)).strftime("%d %b %Y")
-    url = 'http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode={0}/StartDate={1}/EndDate={2}/Json'.format(site,
-           start, tomorrow).replace(' ', '%20')
+    url = 'http://api.erg.kcl.ac.uk/AirQuality/Data/Site/SiteCode={0}/StartDate={1}/EndDate={2}/Json'.format(                              
+        site, start, tomorrow).replace(' ', '%20')
     return url
 
 
