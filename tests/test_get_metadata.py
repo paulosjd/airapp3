@@ -1,1 +1,17 @@
-#resp.json() fomr 'MY1' = {"DailyAirQualityIndex":{"@MonitoringIndexDate":"2017-07-30 00:00:00","@TimeToLive":"28","LocalAuthority":{"@LocalAuthorityCode":"33","@LocalAuthorityName":"Westminster","@LaCentreLatitude":"51.509645","@LaCentreLongitude":"-0.158586","@LaCentreLatitudeWGS84":"6711944.006712","@LaCentreLongitudeWGS84":"-17653.712767","Site":{"@BulletinDate":"2017-07-30 00:00:00","@SiteCode":"MY1","@SiteName":"Westminster - Marylebone Road","@SiteType":"Kerbside","@Latitude":"51.52254","@Longitude":"-0.15459","@LatitudeWGS84":"6714250.73471","@LongitudeWGS84":"-17208.8800817","Species":[{"@SpeciesCode":"NO2","@SpeciesDescription":"Nitrogen Dioxide","@AirQualityIndex":"2","@AirQualityBand":"Low","@IndexSource":"Measurement"},{"@SpeciesCode":"O3","@SpeciesDescription":"Ozone","@AirQualityIndex":"1","@AirQualityBand":"Low","@IndexSource":"Measurement"},{"@SpeciesCode":"PM10","@SpeciesDescription":"PM10 Particulate","@AirQualityIndex":"2","@AirQualityBand":"Low","@IndexSource":"Measurement"},{"@SpeciesCode":"SO2","@SpeciesDescription":"Sulphur Dioxide","@AirQualityIndex":"1","@AirQualityBand":"Low","@IndexSource":"Measurement"}]}}}}
+import unittest
+from views.charts import get_metadata
+
+
+class TestCase(unittest.TestCase):
+
+    # Test that lengths of dictionary values are correct
+    def setUp(self):
+        self.get_metadata_dict = get_metadata('MY1')
+        self.expected_dict = {'site_name': 'Westminster - Marylebone Road', 'site_type': 'Kerbside'}
+
+    def test_get_metadata(self):
+        self.assertEqual(self.get_metadata_dict, self.expected_dict)
+
+
+if __name__ == '__main__':
+    unittest.main()

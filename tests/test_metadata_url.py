@@ -10,3 +10,7 @@ class TestGet_urls(TestCase):
     def test_get_urls(self):
         url = get_metadata_url('MY1')
         self.assertEqual(url, self.expected_url)
+
+
+if __name__ == '__main__':
+    unittest.main()
