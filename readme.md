@@ -1,5 +1,3 @@
-Airapp3
-=========
 
 An application for plotting air pollution data, created using Flask and a JavaScript plotting library. It enables users to obtain live charts of recent pollution levels for various monitoring sites in London. The data is from the London Air Quality Network and is served by the King's College London API.
 
