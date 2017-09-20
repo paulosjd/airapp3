@@ -21,12 +21,10 @@ Dependencies:
    - https://pypi.python.org/pypi/pip
 
 
-Configure and run server:
+Running the application:
 ------------------------
 
 After cloning or downloading project files, run the following commands from the project's root directory:
-
-    pip install --upgrade pip
 
     pip install -r requirements.txt
 
