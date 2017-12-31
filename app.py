@@ -3,7 +3,8 @@ from views.index import index_blueprint
 from views.charts import charts_blueprint
 
 
-app = Flask(__name__)
+application = Flask(__name__)
+app = application
 app.register_blueprint(index_blueprint)
 app.register_blueprint(charts_blueprint)
 
