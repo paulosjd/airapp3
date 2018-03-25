@@ -42,14 +42,20 @@ def get_metadata(site):
     return dict(site_name=info_array.get('@SiteName'), site_type=info_array.get('@SiteType'))
 
 
-def suffix(d):
-    """ chart title formatting """
-    return 'th' if 11 <= d <= 13 else {1: 'st', 2: 'nd', 3: 'rd'}.get(d % 10, 'th')
+def suffix(day):
+    """ helper function for chart title formatting """
+    if day in ['11', '12', '13']:
+        return 'th'
+    else:
+        return {1: 'st', 2: 'nd', 3: 'rd'}.get(day, 'th')
 
 
-def custom_strftime(str_dt, t):
-    """ chart title formatting """
-    return t.strftime(str_dt).replace('{S}', str(t.day) + suffix(t.day))
+def custom_date():
+    """ custom date for chart title formatting """
+    dt = datetime.now()
+    day = str(dt.day) + suffix(dt.day)
+    today = dt.strftime('{d} %B %Y').replace('{d}', day)
+    return today
 
 
 @charts_blueprint.route('/chart/<site><int:days>')
@@ -59,7 +65,7 @@ def make_chart(site='MY1', days=1, chartID='chart_ID', chart_type='line', chart_
     chart = {"renderTo": chartID, "type": chart_type, "height": chart_height, "width": chart_width}
     series = [{"name": 'PM10', "data": data_dict['pm1']}, {"name": 'PM2.5', "data": data_dict['pm2']},
               {"name": 'Nitrogen Dioxide', "data": data_dict['no2']}]
-    title = {"text": 'Recent air pollution levels:   ' + (custom_strftime('%B {S}, %Y', datetime.now()))}
+    title = {"text": 'Recent air pollution levels:   ' + custom_date()}
     xaxis = {"categories": data_dict['hours'][days * -24:]}
     yaxis = {"title": {"text": 'Concentration (ug/m3)'}}
     return render_template('detail.html', site_name=metadata['site_name'], site_type=metadata['site_type'],
